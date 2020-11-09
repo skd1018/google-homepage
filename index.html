@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Google</title>
+    <script src="https://kit.fontawesome.com/9d5130d366.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+    <style>
+
+        .body {
+            
+        }
+       
+        .page {
+            display: grid;
+            min-height: 100vh;
+            max-height: 100vh;
+            max-width: 100vw;
+            grid-template-rows: 30px 1fr 50px;
+            row-gap: 40px;
+            align-items: start;
+            margin-right: 5px;
+            
+        }
+        .topbar {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .buttonbar {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 10px;
+        }
+
+        .logo {
+            display: grid;
+            justify-items: center;
+        }
+       
+        .middlerows {
+            display: grid;
+            row-gap: 50px;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        .searchrow {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .left-content {
+            display: grid;
+            grid-template-columns: 20% 80%;  
+        }
+        .lc-bottom {
+            display: grid;
+            grid-template-columns: auto auto auto  ;
+            font-size: 10px;
+            justify-content: start;
+        }
+        .rc-bottom {
+            display: grid;
+            grid-template-columns: auto auto auto  ;
+            font-size: 10px;
+            justify-content: end;
+
+        }
+       
+        .left-nav {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+            color: #5F6368;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+        .right-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: end;
+            color: #5F6368;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+        .right-nav {
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+        }
+       
+        .searchform {
+            display: grid;
+            border: none;
+            background: none;
+        }
+
+        .searchbar {
+            display: grid;
+            border-radius: 24px;
+            width: 100%;
+            border:1px solid #dfe1e5;
+            height: 44px;
+            grid-template-columns: 10% 85%;
+        }
+        .signin {
+            background-color: #4285f4;
+            color: white;
+            border-radius: 1px;
+            border-color: #4285f4;
+            width: 80px;
+            font-weight: bolder;
+            font-size: 12px;
+            border: none;
+            height: 40px;
+        }
+        .searchbutton {
+            border: #f2f2f2;
+            background-color: #f2f2f2;
+            border-radius: 4px;
+            color: #5F6368;
+            height: 40px;
+            width: 140px;
+        }
+      
+
+        .inputs {
+            display: inline-grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 15px;
+        }
+
+        .searchcol {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: end;
+        }
+
+        .luckycol {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: start;
+        }
+        
+        .icon {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            font-weight: 1px;
+            color:   #5F6368;
+            padding-left: 3px;
+            font-weight: lighter;
+        }
+
+        .bottombar {
+            display: grid;
+            color: #5F6368;
+            grid-template-columns: 1fr 1fr ; 
+            align-self: end;
+            height: 50px;
+        }
+
+        .left-nav1{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            justify-items: center;
+            align-items: center;
+            color: #5F6368;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            grid-column-gap: 3px;
+            justify-content: end;
+        }
+        .right-nav1 {
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            justify-items: center;
+            align-items: center;
+            color: #5F6368;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            grid-column-gap: 3px;
+            justify-content: end;
+        }
+
+    </style>
+<div class="page">
+    <div class="topbar">
+        <div class="left-content">
+            <div class="left-nav">
+                <div>About</div> 
+                <div>Store</div>
+            </div>
+            <div class="left-nav"></div>
+        </div>
+
+        <div class="right-content">
+            <div></div>
+            <div class="right-nav">
+              <div>Image</div>  
+              <div>Gmail</div>  
+               <div> <button class="signin">
+                   Sign In
+                </button> </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="middlerows">
+        <div class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+        <div class="searchrow">
+            <div></div>
+            <div class="searchbar">
+                <div class="icon">
+                    <i class="fas fa-search fa-1x fa-light"></i>
+                </div>
+            <input class="searchform">
+            </div>
+            <div></div>
+
+        </div>
+        <div class="buttonbar"> 
+            <div class="right-content">
+                <div></div>
+                <button class="searchbutton">
+                    Google Search
+                </button>
+            </div>
+            <div class="left-content">
+                <button class="searchbutton">
+                    I'm Feeling Lucky
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="bottombar">
+        <div class="lc-bottom">
+        <div class="left-nav1">
+            <div>Advertising</div>
+            <div>Business</div>
+            <div>How Search Works</div>
+        </div>
+        </div>
+        <div class="rc-bottom">
+            <div class="right-nav1">
+                <div>Privacy</div>
+                <div>Terms</div>
+                <div>Settings</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+
+
+
